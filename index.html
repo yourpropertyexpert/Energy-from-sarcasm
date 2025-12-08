@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SarcasmEnergy - The Future of Power. Obviously.</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#6cc4e4',
+                        'accent-light': '#7ee1fb',
+                        'bg-dark': '#24343c',
+                        'dark-neutral': '#145770',
+                        'teal-accent': '#047694',
+                        'mid-blue': '#5480ab',
+                    }
+                }
+            }
+        }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900 text-white font-poppins">
+
+<body class="bg-bg-dark text-white font-poppins">
+
+    <!-- UK Flag Corner Flash -->
+    <div class="corner-flash">
+        <div class="corner-flash-content">🇬🇧</div>
+    </div>
 
     <!-- Header -->
-    <header class="bg-gray-900/50 backdrop-blur-lg fixed top-0 left-0 right-0 z-10">
+    <header class="bg-bg-dark/50 backdrop-blur-lg fixed top-0 left-0 right-0 z-10">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0">
-                    <a href="#" class="text-2xl font-bold text-teal-400">SarcasmEnergy</a>
+                    <a href="#" class="text-2xl font-bold text-primary-blue">SarcasmEnergy</a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#features" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
-                        <a href="#how-it-works" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">How It Works</a>
-                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact (Don't)</a>
+                        <a href="#features"
+                            class="text-gray-300 hover:bg-mid-blue hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
+                        <a href="#how-it-works"
+                            class="text-gray-300 hover:bg-mid-blue hover:text-white px-3 py-2 rounded-md text-sm font-medium">How
+                            It Works</a>
+                        <a href="#quotations"
+                            class="text-gray-300 hover:bg-mid-blue hover:text-white px-3 py-2 rounded-md text-sm font-medium">From
+                            our customers</a>
+                        <a href="#contact"
+                            class="text-gray-300 hover:bg-mid-blue hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                     </div>
                 </div>
             </div>
@@ -30,66 +60,277 @@
 
     <!-- Hero Section -->
     <main class="pt-16">
-        <section class="relative text-center py-20 sm:py-32 px-4 sm:px-6 lg:px-8 bg-gray-900 overflow-hidden">
-            <div class="absolute inset-0 bg-grid-teal-500/10 [mask-image:linear-gradient(to_bottom,white_5%,transparent_95%)]"></div>
+        <section class="relative text-center py-20 sm:py-32 px-4 sm:px-6 lg:px-8 bg-bg-dark overflow-hidden">
+            <div
+                class="absolute inset-0 bg-grid-teal-500/10 [mask-image:linear-gradient(to_bottom,white_5%,transparent_95%)]">
+            </div>
             <div class="relative z-10">
                 <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white">
-                    Harnessing the <span class="text-teal-400">Untapped Power</span> of Your Wit.
+                    Harnessing the <span class="text-primary-blue">Untapped Power</span> of Your Wit.
                 </h1>
                 <p class="mt-4 max-w-lg mx-auto text-lg text-gray-400 sm:max-w-xl">
-                    Because your eye-rolls and sarcastic sighs are a terrible thing to waste. We've finally done it. You're welcome, world.
+                    Because your eye-rolls and sarcastic sighs are a terrible thing to waste. We've finally done it.
+                    You're welcome, world.
                 </p>
                 <div class="mt-8 flex justify-center space-x-4">
-                    <a href="#" class="inline-block bg-teal-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-teal-600 transition-colors duration-300">Get Started (If you must)</a>
+                    <a href="#waitlist"
+                        class="inline-block bg-teal-accent text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-dark-neutral transition-colors duration-300">Join
+                        our waitlist</a>
                 </div>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="py-20 sm:py-24 bg-gray-800/50">
+        <section id="features" class="py-20 sm:py-24 bg-dark-neutral/50">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
-                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our Revolutionary Patent Application</h2>
-                    <p class="mt-4 text-lg text-gray-400">Introducing the SarcasmSphere™, a cutting-edge patent application that finally understands you.</p>
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our Revolutionary Pending
+                        Patent Application</h2>
+                    <p class="mt-4 text-lg text-gray-400">Introducing the SarcasmSphere™, a cutting-edge pending patent
+                        application that finally understands you.</p>
                 </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                     <!-- Feature Card 1 -->
-                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 reveal">
-                        <h3 class="text-xl font-semibold text-teal-400">Sarcasm Detection</h3>
-                        <p class="mt-4 text-gray-400">Our patented algorithm distinguishes between genuine enthusiasm and your brilliant, scathing wit. Oh, joy.</p>
+                    <div
+                        class="bg-bg-dark p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 reveal">
+                        <h3 class="text-xl font-semibold text-primary-blue">Sarcasm Detection</h3>
+                        <p class="mt-4 text-gray-400">Our pending patented algorithm distinguishes between genuine
+                            enthusiasm and your brilliant, scathing wit. Oh, joy.</p>
                     </div>
                     <!-- Feature Card 2 -->
-                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 reveal">
-                        <h3 class="text-xl font-semibold text-teal-400">Kinetic Conversion</h3>
-                        <p class="mt-4 text-gray-400">Converts the kinetic energy of sarcastic gestures into clean, renewable electricity. Your eye-roll now powers a lightbulb. Thrilling.</p>
+                    <div
+                        class="bg-bg-dark p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 reveal">
+                        <h3 class="text-xl font-semibold text-primary-blue">Kinetic Conversion</h3>
+                        <p class="mt-4 text-gray-400">Converts the kinetic energy of sarcastic gestures into clean,
+                            renewable electricity. Your eye-roll now powers a lightbulb. Thrilling.</p>
                     </div>
                     <!-- Feature Card 3 -->
-                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 reveal">
-                        <h3 class="text-xl font-semibold text-teal-400">Thermal Capture</h3>
-                        <p class="mt-4 text-gray-400">Captures the thermal energy from your heated, sarcastic remarks. Because someone has to find value in your hot air.</p>
+                    <div
+                        class="bg-bg-dark p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 reveal">
+                        <h3 class="text-xl font-semibold text-primary-blue">Thermal Capture</h3>
+                        <p class="mt-4 text-gray-400">Captures the thermal energy from your heated, sarcastic remarks.
+                            Because someone has to find value in your hot air.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- How It Works Section -->
-        <section id="how-it-works" class="py-20 sm:py-24 bg-gray-900">
-             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                 <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">How It Works</h2>
-                 <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-400">It's not rocket science. Or maybe it is. You wouldn't get it anyway.</p>
-                 <div class="mt-12 reveal">
-                     <p class="text-teal-400 font-mono text-lg p-8 bg-gray-800 rounded-lg inline-block">SarcasmSync™ Wristband → SarcasmSphere™ App → SarcasmGrid™ → Dimly Lit Room</p>
-                 </div>
-             </div>
+        <section id="how-it-works" class="py-20 sm:py-24 bg-bg-dark">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">How It Works</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-400">The United Kingdom has been the undisputed world
+                    leader in sarcasm since 1675 - a truth universally acknowledged.
+                    Given this rich heritage of dry wit, cutting remarks, and perfectly timed eye-rolls, it's only
+                    natural
+                    that Britain should be the first country to commercialise energy from sarcasm. Who else could
+                    possibly
+                    have perfected this technology? Certainly not the French. Or the Americans. Obviously.</p>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-400">We've submitted a patent application to the UK
+                    Intellectual Property Office (UKIPO) under the Patents Act 1977, and while we'd love to explain
+                    exactly how our revolutionary technology works, we're legally bound to keep the technical
+                    specifications confidential until the patent is granted. Under UK patent law, premature disclosure
+                    could invalidate our application, so we're keeping mum for now. Rest assured, it's brilliant.
+                    Obviously.</p>
+                <div class="mt-12 reveal">
+                    <p class="text-primary-blue font-mono text-lg p-8 bg-dark-neutral rounded-lg inline-block">
+                        SarcasmSync™
+                        Wristband → SarcasmSphere™ → SarcasmGrid™ → Dimly Lit Room</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Waitlist Section -->
+        <section id="waitlist" class="py-20 sm:py-24 bg-dark-neutral/50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Join Our Waitlist</h2>
+                    <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-400">Well, well, well. Look who's interested now.
+                        Our first production batch has completely sold out—because apparently everyone wants to monetize
+                        their sarcasm. Who saw that coming? (We did. Obviously.)</p>
+                </div>
+                <div class="mt-12 max-w-2xl mx-auto reveal">
+                    <div class="bg-bg-dark p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-300 mb-6">Don't worry, we're not abandoning you. Our manufacturing
+                            facilities are working around the clock to produce more SarcasmSphere™ units. Well, maybe
+                            not around the clock—we do need sleep—but we're definitely making more. Promise.</p>
+                        <p class="text-gray-300 mb-6">Join our waitlist to be notified when the next batch becomes
+                            available. You'll be among the first to know when we've restocked, which means you'll have
+                            the privilege of being sarcastic and energy-efficient simultaneously. What a time to be
+                            alive.</p>
+                        <p class="text-gray-300 mb-8">We're currently estimating the next batch will be ready in 8-12
+                            weeks, give or take. Manufacturing sarcasm-powered devices isn't exactly straightforward,
+                            you know. But we're doing our best. Really.</p>
+                        <div class="text-center">
+                            <p class="text-primary-blue font-semibold text-lg mb-4">Want to be notified? Drop us an
+                                email
+                                at:</p>
+                            <a href="mailto:energyfromsarcasm@gmail.com?subject=Waitlist%20Signup"
+                                class="text-primary-blue text-xl font-semibold hover:text-accent-light transition-colors duration-300">energyfromsarcasm@gmail.com</a>
+                            <p class="text-gray-500 text-sm mt-4">Subject line: "Waitlist Signup" (or don't, we'll
+                                figure it out)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Quotations Section -->
+        <section id="quotations" class="py-20 sm:py-24 bg-dark-neutral/50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">What Our Customers Are Saying
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-400">Real testimonials from real people. Probably.</p>
+                </div>
+                <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Quotation Card 1 -->
+                    <div
+                        class="bg-bg-dark p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 reveal">
+                        <div class="text-primary-blue text-4xl mb-4">"</div>
+                        <p class="text-gray-300 italic mb-4">I've never been so thrilled to finally monetize my natural
+                            talent for sarcasm. My eye-rolls now power my entire home office. It's almost like my
+                            personality finally has value. Almost.</p>
+                        <p class="text-primary-blue font-semibold">— Sarah M., Professional Skeptic, London</p>
+                    </div>
+                    <!-- Quotation Card 2 -->
+                    <div
+                        class="bg-bg-dark p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 reveal">
+                        <div class="text-primary-blue text-4xl mb-4">"</div>
+                        <p class="text-gray-300 italic mb-4">Finally, a product that understands me. My sarcastic
+                            comments during meetings now contribute to the company's energy grid. My boss is delighted.
+                            I'm sure of it.</p>
+                        <p class="text-primary-blue font-semibold">— James K., Corporate Cynic, Manchester</p>
+                    </div>
+                    <!-- Quotation Card 3 -->
+                    <div
+                        class="bg-bg-dark p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 reveal">
+                        <div class="text-primary-blue text-4xl mb-4">"</div>
+                        <p class="text-gray-300 italic mb-4">I was skeptical at first—shocking, I know—but this thing
+                            actually works. My teenage daughter's sarcasm now powers our entire living room. At least
+                            something productive came from her attitude.</p>
+                        <p class="text-primary-blue font-semibold">— Linda P., Exhausted Parent, Birmingham</p>
+                    </div>
+                    <!-- Quotation Card 4 -->
+                    <div
+                        class="bg-bg-dark p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 reveal">
+                        <div class="text-primary-blue text-4xl mb-4">"</div>
+                        <p class="text-gray-300 italic mb-4">As a stand-up comedian, I generate enough sarcasm to power
+                            a small city. This device finally lets me give back to the community. You're welcome,
+                            society.</p>
+                        <p class="text-primary-blue font-semibold">— Mike R., Comedian, Edinburgh</p>
+                    </div>
+                    <!-- Quotation Card 5 -->
+                    <div
+                        class="bg-bg-dark p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 reveal">
+                        <div class="text-primary-blue text-4xl mb-4">"</div>
+                        <p class="text-gray-300 italic mb-4">My energy bill dropped by 40% after installing the
+                            SarcasmSphere. Coincidence? Probably not. My natural cynicism is finally paying dividends.
+                            Who knew?</p>
+                        <p class="text-primary-blue font-semibold">— David T., Energy Enthusiast, Bristol</p>
+                    </div>
+                    <!-- Quotation Card 6 -->
+                    <div
+                        class="bg-bg-dark p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 reveal">
+                        <div class="text-primary-blue text-4xl mb-4">"</div>
+                        <p class="text-gray-300 italic mb-4">I bought this as a joke, but it's actually the best
+                            purchase I've made this year. My sarcastic remarks now have measurable impact. Literally.
+                            The irony is not lost on me.</p>
+                        <p class="text-primary-blue font-semibold">— Emma L., Reluctant Believer, Leeds</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 sm:py-24 bg-bg-dark">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Contact Us</h2>
+                    <p class="mt-4 text-lg text-gray-400">We're absolutely thrilled to hear from you. Really. We're just
+                        bursting with excitement.</p>
+                </div>
+                <div class="mt-12 max-w-2xl mx-auto reveal">
+                    <div class="bg-dark-neutral p-8 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl font-semibold text-primary-blue mb-4">Get in Touch</h3>
+                        <p class="text-gray-300 mb-6">Have questions? Concerns? Want to tell us how brilliant we are?
+                            We're all ears. Well, not literally. That would be weird.</p>
+                        <div class="mt-6">
+                            <p class="text-lg text-gray-400 mb-2">Email us at:</p>
+                            <a href="mailto:energyfromsarcasm@gmail.com"
+                                class="text-primary-blue text-xl font-semibold hover:text-accent-light transition-colors duration-300">energyfromsarcasm@gmail.com</a>
+                        </div>
+                        <p class="mt-6 text-gray-500 text-sm">We'll get back to you eventually. Probably. No promises,
+                            though.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800/50 border-t border-gray-700">
-        <div class="container mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-400">
-            <p>&copy; 2024 SarcasmEnergy. Because we're just so thrilled to be a part of the solution.</p>
+    <footer class="bg-dark-neutral/50 border-t border-mid-blue">
+        <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Legal Disclaimers -->
+                <div>
+                    <h3 class="text-primary-blue font-semibold mb-4">Legal Disclaimers</h3>
+                    <p class="text-gray-400 text-sm mb-2">SarcasmEnergy™ products are not guaranteed to actually
+                        generate energy. Results may vary based on your natural sarcasm levels, which we cannot measure,
+                        verify, or guarantee. If your device fails to power your home, we're not surprised. We're also
+                        not liable.</p>
+                    <p class="text-gray-400 text-sm">By purchasing our products, you acknowledge that sarcasm is
+                        subjective, energy conversion is theoretical, and your expectations should be appropriately low.
+                        Obviously.</p>
+                </div>
+
+                <!-- Terms of Service -->
+                <div>
+                    <h3 class="text-primary-blue font-semibold mb-4">Terms of Service</h3>
+                    <p class="text-gray-400 text-sm mb-2">By using SarcasmEnergy™ products, you agree to these terms,
+                        whether you've read them or not. We know you haven't. Nobody reads these. But here we are.</p>
+                    <p class="text-gray-400 text-sm mb-2">You agree not to use our products for illegal purposes, though
+                        we're not entirely sure what those would be. Generating too much sarcasm? That's on you.</p>
+                    <p class="text-gray-400 text-sm">We reserve the right to change these terms at any time without
+                        notice. Because we can. And we probably will.</p>
+                </div>
+
+                <!-- Privacy Policy -->
+                <div>
+                    <h3 class="text-primary-blue font-semibold mb-4">Privacy Policy</h3>
+                    <p class="text-gray-400 text-sm mb-2">We collect your sarcasm data. All of it. Every eye-roll, every
+                        snide remark, every passive-aggressive comment. We're watching. Well, our algorithms are
+                        watching. We're probably sleeping.</p>
+                    <p class="text-gray-400 text-sm mb-2">We may share your sarcasm patterns with third parties,
+                        researchers, or anyone who asks nicely. Just kidding. Or are we? You'll never know.</p>
+                    <p class="text-gray-400 text-sm">Your data is stored securely in the cloud, which is just someone
+                        else's computer. But it's fine. Probably.</p>
+                </div>
+
+                <!-- Warranty Information -->
+                <div>
+                    <h3 class="text-primary-blue font-semibold mb-4">Warranty Information</h3>
+                    <p class="text-gray-400 text-sm mb-2">Our products come with a limited warranty that covers
+                        everything except actual functionality. If it breaks, stops working, or fails to meet your
+                        expectations, that's unfortunate. For you.</p>
+                    <p class="text-gray-400 text-sm mb-2">Warranty claims must be submitted in writing, on paper, via
+                        carrier pigeon, during a full moon. Just kidding. Email us. We'll probably ignore it anyway.</p>
+                    <p class="text-gray-400 text-sm">Refunds are available within 30 days of purchase, provided you can
+                        prove you actually bought something. Good luck with that.</p>
+                </div>
+            </div>
+
+            <div class="border-t border-mid-blue pt-8 text-center">
+                <p class="text-gray-400 text-sm mb-2">&copy; 2024 SarcasmEnergy™. All rights reserved. Some rights
+                    reserved. Actually, we're not sure which rights we have. We'll figure it out later.</p>
+                <p class="text-gray-500 text-xs">SarcasmEnergy™, SarcasmSphere™, SarcasmSync™, and SarcasmGrid™ are
+                    trademarks of SarcasmEnergy Ltd. (or whatever we're calling ourselves this week).</p>
+                <p class="text-gray-500 text-xs mt-2">Patent pending. Seriously. We filed something. Whether it's valid
+                    or not is between us and the patent office. And possibly our lawyers.</p>
+            </div>
         </div>
     </footer>
     <script src="script.js" defer></script>
 </body>
+
 </html>
